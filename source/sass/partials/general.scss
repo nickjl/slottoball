@@ -1,0 +1,18 @@
+.wrapper {
+  max-width: 414px;
+  display: block;
+  margin: 4rem auto;
+  border: 1px solid white;
+  min-height: 736px;
+  color: white;
+}
+
+body {
+  background: $brandBlue url('../images/bg.jpg') no-repeat;
+  background-size: cover;
+}
+
+svg {
+  height: 40px;
+  fill: white;
+}

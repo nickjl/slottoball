@@ -8,10 +8,10 @@ module.exports = function (grunt) {
                 tasks: ['sass', 'autoprefixer', 'concat']
             },
 
-            css: {
-                files: ['source/**/*.sass', 'source/**/*.scss'],
-                tasks: ['sass', 'autoprefixer']
-            },
+            // css: {
+            //     files: ['source/**/*.sass', 'source/**/*.scss'],
+            //     tasks: ['sass', 'autoprefixer']
+            // },
 
             pug: {
                 files: ['source/**/*.pug'],
@@ -23,10 +23,10 @@ module.exports = function (grunt) {
                 tasks: ['concat', 'uglify']
             },
 
-            // browserSync: {
-            //     files: ['app/**/*.css', 'app/**/*.html'],
-            //     tasks: ['pug']
-            //  },
+            browserSync: {
+                files: ['app/**/*.css', 'app/**/*.html'],
+                //tasks: ['']
+             },
 
         },
 
@@ -140,7 +140,8 @@ module.exports = function (grunt) {
             default_options: {
                 bsFiles: {
                     src: [
-                        'app/css/*.css',
+                        'app/assets/css/*.css',
+                        'app/assets/js/*.js',
                         'app/*.html'
                         // '*.pug',
                     ]
