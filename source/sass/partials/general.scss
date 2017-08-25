@@ -19,12 +19,14 @@ svg {
 
 
 
-.btn-confirm {
+.btn-green {
   width: 100%;
   background: $brandGreen;
   border-radius: 0;
   color: #fff;
   padding: $padding;
+  font-family: $serif;
+  font-size: $largeFontSize;
 }
 
 

@@ -1,0 +1,63 @@
+.confirmation {
+  background-color: white;
+  color: #000;
+  text-align: center;
+  font-size: $smallFontSize + 0.2rem;
+}
+
+.congrats {
+  background: $brandLight;
+  padding: $padding;
+  font-family: $serif;
+}
+
+.purchased {
+  padding: $padding * 3 $padding;
+}
+
+.purchased-number {
+  font-size: $largeFontSize * 4;
+  font-weight: bold;
+}
+
+.purchased-price {
+  border-top: 2px solid $brandLight;
+  border-bottom: 2px solid $brandLight;
+  padding: $padding;
+  font-size: $smallFontSize;
+
+}
+
+.purchased-item {
+  flex: 1;
+}
+
+.purchased-value {
+  font-size: $xlFontSize;
+  color: $brandLight;
+}
+
+.purchased-total {
+  font-size: $xlFontSize;
+  font-weight: bold;
+}
+
+.return {
+  color: $brandBlue;
+  padding: $padding * 3 $padding;
+}
+
+.countdown {
+  font-size: $xlFontSize + 0.2rem;
+}
+
+.btn-return {
+  width: 80%;
+  margin-top: $margin * 2;
+}
+
+
+
+
+
+

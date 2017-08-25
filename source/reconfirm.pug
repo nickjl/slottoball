@@ -1,0 +1,69 @@
+extends views/layout
+
+mixin ticket(number, was, total)
+    .ticket-c.d-flex.justify-content-between.mb-2
+        .ticket-c__tickets.d-flex.flex-column.align-items-center
+            span Tickets
+            span.ticket-c__tickets--number= number
+        .ticket-c__price.d-flex.flex-column
+            .d-flex.justify-content-around
+                .d-flex.flex-column.align-items-center
+                    //span Was
+                    span.ticket-c__was
+                        span= was
+                .d-flex.flex-column.align-items-center
+                    //span Total
+                    span.ticket-c__now= total
+            .d-flex.justify-content-center
+                span.ticket-c__per £2.00 each
+        a.ticket-c__cart.d-flex.flex-column.align-items-center(href='')
+            //svg.icon-stroke-dark(viewBox="0 0 110 110")
+                use(xlink:href="#plus" x="0" y="0")
+            svg(viewBox="0 0 110 110")
+                use(xlink:href="#cart" x="0" y="0")
+
+append css
+    link(rel='stylesheet', href='assets/css/slottoball.min.css')
+
+
+block content
+    .main-bg.container-fluid
+        .d-flex.justify-content-between.align-items-center
+            svg(viewbox='0 0 341 78')
+                include views/includes/svg/logos/logo-horizontal
+            span.d-flex.align-items-center.small Enter draw
+                svg(viewbox='0 0 110 110')
+                    include views/includes/svg/icons/close
+
+        .confirmation.mt-2
+            .py-4.congrats
+                p.mb-0 Almost there!
+            .d-flex.flex-column.justify-content-between.align-items-center.purchased
+                span You're about to buy
+                span.purchased-number 10
+                span TICKETS
+            .purchased-price.d-flex.justify-content-around
+                .d-flex.flex-column.align-items-center.purchased-item
+                    span Price / TICKET
+                    span.purchased-value £1.20
+                .d-flex.flex-column.align-items-center.purchased-item
+                    span TOTAL
+                    span.purchased-total £12.00
+                .d-flex.flex-column.align-items-center.purchased-item
+                    span YOU SAVE
+                    span.purchased-value £13.00
+            .return
+                p.mb-0 Next draw in
+                span.countdown 24 h 28 m 10 s
+                button.btn.btn-green.btn-return Confirm
+
+
+
+
+
+
+
+
+block scripts
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+    script(src="assets/js/slottoball.min.js")
