@@ -1,3 +1,6 @@
+block vars
+    - var template = 'default';
+
 doctype
 html
     head
@@ -7,7 +10,8 @@ html
             meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
 
         block css
-            link(rel='stylesheet', href='assets/css/slottoball.min.css')
+            //-link(rel='stylesheet', href='assets/css/slottoball.min.css')
+            link(href='https://fonts.googleapis.com/css?family=Maven+Pro|Zilla+Slab:400,700', rel='stylesheet', type='text/css')
 
 
 
@@ -16,14 +20,15 @@ html
             //-link(rel='shortcut icon', href='http://www.monacoriches.com/favicon.png', type='image/x-icon')
             //-link(rel='canonical', href='http://www.monacoriches.com/')
 
-    body
+
+    body(class= template)
         block header
             include includes/svg/svg
 
 
-        .wrapper
 
-            block content
+
+        block content
 
 
 
@@ -33,5 +38,5 @@ html
 
 
         block scripts
-            script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
-            script(src="assets/js/slottoball.min.js")
+            //-script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+            //-script(src="assets/js/slottoball.min.js")

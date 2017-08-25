@@ -1,0 +1,90 @@
+extends views/layout
+
+mixin ticket(number, was, total)
+    .ticket-c.d-flex.justify-content-between.mb-2
+        .ticket-c__tickets.d-flex.flex-column.align-items-center
+            span Tickets
+            span.ticket-c__tickets--number= number
+        .ticket-c__price.d-flex.flex-column
+            .d-flex.justify-content-around
+                .d-flex.flex-column.align-items-center
+                    //span Was
+                    span.ticket-c__was
+                        span= was
+                .d-flex.flex-column.align-items-center
+                    //span Total
+                    span.ticket-c__now= total
+            .d-flex.justify-content-center
+                span.ticket-c__per £2.00 each
+        a.ticket-c__cart.d-flex.flex-column.align-items-center(href='')
+            //svg.icon-stroke-dark(viewBox="0 0 110 110")
+                use(xlink:href="#plus" x="0" y="0")
+            svg(viewBox="0 0 110 110")
+                use(xlink:href="#cart" x="0" y="0")
+
+append css
+    link(rel='stylesheet', href='assets/css/slottoball.min.css')
+
+
+block content
+    .main-bg.container-fluid
+        header.d-flex.justify-content-between.align-items-center
+            svg(viewbox='0 0 341 78')
+                include views/includes/svg/logos/logo-horizontal
+            span 01 h 28 m 10 s
+            span.d-flex.align-items-center.small Enter draw
+                svg(viewbox='0 0 110 110')
+                    include views/includes/svg/icons/close
+
+        .prizes.mt-2
+            .d-flex.flex-column.justify-content-center.align-items-center
+                .d-flex.align-items-center.mb-1
+                    h5.mb-0.mr-2 PRIZES STRUCTURE
+                    svg.icon-filled(viewbox='0 0 110 110')
+                        include views/includes/svg/icons/prizes
+                include views/includes/prizes/prizes
+                a(href='') View Full Prizes Breakdown
+
+        //-.d-flex.justify-content-between.align-items-end
+            .d-flex.flex-column
+                //span Next draw in
+                span Next draw: 01 h 28 m 10 s
+            span View tickets
+                svg(viewBox="0 0 110 110")
+                    use(xlink:href="#cart" x="0" y="0")
+    .quick-buy.container-fluid
+        .d-flex.justify-content-between.align-items-center
+            h1 Get Tickets Now
+            a.view-cart(href='')
+                span.circle 0
+                svg(viewBox="0 0 110 110")
+                    use(xlink:href="#cart" x="0" y="0")
+        +ticket('2', '£5.50', '£4.00')
+        +ticket('3', '£7.50', '£5.25')
+        +ticket('4', '£10.00', '£6.20')
+        +ticket('5', '£10.00', '£6.20')
+        +ticket('10', '£10.00', '£6.20')
+        .individual-ticket
+            //.d-flex.justify-content-end.align-items-center
+                span.mr-4 TICKETS
+                span.indiv-per £1.40 PER TICKET
+            .d-flex.justify-content-around.align-items-center
+                svg.icon-disabled(viewBox="0 0 110 110")
+                    include views/includes/svg/icons/minusCircle
+                span.indiv-number 5
+                svg.icon-stroke(viewBox="0 0 110 110")
+                    include views/includes/svg/icons/plusCircle
+            .d-flex.indiv-price.justify-content-center.pb-2
+                span.indiv-was.pr-3 £10.50
+                span.indiv-per £1.40 each
+                span.indiv-now.pl-3 £7.00
+            button.btn.btn-confirm CONFIRM
+
+
+
+
+
+
+block scripts
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+    script(src="assets/js/slottoball.min.js")

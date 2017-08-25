@@ -1,8 +1,27 @@
 $brandBlue: #3772FF;
 $brandGreen: #86CE22;
 $brandLightGreen: #EAFFCC;
-$brandred: #EC2028;
+$brandDarkGreen: #68932C;
+$brandRed: #EC2028;
 $brandLight: #DEE5E5;
+
+$sans: 'Maven Pro', sans-serif;
+$serif: 'Zilla Slab', serif;
+
+
+$headingFont: $serif;
+$bodyFont: $sans;
+
+$smallFontSize: 0.8rem;
+$largeFontSize: 1.1rem;
 
 
 $padding: 15px;
+$margin: 15px;
+
+$iconHeight: 25px;
+$iconStroke: 12;
+
+$borderRadius: 4px;
+
+$cartCircle: 20px;

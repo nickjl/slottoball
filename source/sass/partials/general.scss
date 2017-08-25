@@ -1,18 +1,32 @@
-.wrapper {
-  max-width: 414px;
-  display: block;
-  margin: 4rem auto;
-  border: 1px solid white;
-  min-height: 736px;
-  color: white;
+body {
+  font-family: $bodyFont;
 }
 
-body {
+.main-bg {
   background: $brandBlue url('../images/bg.jpg') no-repeat;
   background-size: cover;
+  color: #fff;
+  padding: $padding;
+  font-size: $smallFontSize;
 }
 
 svg {
-  height: 40px;
-  fill: white;
+  height: $iconHeight;
+  fill: #fff;
+  stroke-width: $iconStroke;
+
 }
+
+
+.btn-confirm {
+  width: 100%;
+  background: $brandGreen;
+  border-radius: 0;
+  color: #fff;
+  padding: $padding;
+}
+
+
+
+
+

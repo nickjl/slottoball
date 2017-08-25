@@ -1,0 +1,132 @@
+.ticket-c {
+  background: #fff;
+  border-radius: $borderRadius;
+  font-size: $smallFontSize;
+
+  &__tickets {
+    flex: 1;
+    border-right: 2px solid $brandLight;
+
+
+    &--number {
+      font-size: $largeFontSize * 2;
+      color: $brandLight;
+      line-height: $largeFontSize * 2;
+    }
+
+  }
+
+  &__price {
+    flex: 2.5;
+
+  }
+
+
+  &__was {
+    font-size: $largeFontSize;
+    text-decoration: line-through;
+    color: $brandRed;
+
+    span {
+      color: #000;
+    }
+
+  }
+
+  &__now {
+    font-size: $largeFontSize;
+    font-weight: bold;
+
+  }
+
+  &__per {
+    background: $brandBlue;
+    color: #fff;
+    padding: $padding/5 $padding*2/3;
+    border-radius: $borderRadius * 5;
+  }
+
+
+  &__cart {
+    flex: 1;
+    padding: $padding 0;
+    background: $brandGreen;
+    border-top-right-radius: $borderRadius;
+    border-bottom-right-radius: $borderRadius;
+  }
+}
+
+
+
+.quick-buy {
+  background: $brandLight;
+  padding: $padding/2 $padding;
+
+  h1 {
+    font-size: $largeFontSize;
+    font-family: $headingFont;
+    font-weight: bold;
+  }
+
+}
+
+.view-cart {
+  position: relative;
+
+  svg {
+    fill: #000;
+    padding-right: 10px;
+  }
+
+  .circle {
+    background: $brandRed;
+    color: #fff;
+    border-radius: 100%;
+    position: absolute;
+    right: 0;
+    top: -5px;
+    font-size: $smallFontSize - 0.2rem;
+    width: $cartCircle;
+    height: $cartCircle;
+    line-height: $cartCircle;
+    text-align: center;
+  }
+}
+
+
+
+.individual-ticket {
+  background: #fff;
+  font-size: $smallFontSize;
+  margin-top: $margin;
+
+  svg {
+    height: $iconHeight * 2;
+    fill: transparent;
+  }
+
+
+  .indiv-per {
+    background: $brandBlue;
+    padding: $padding/5 $padding*2/3;
+    border-radius: $borderRadius * 5;
+    color: #fff;
+  }
+
+  .indiv-number {
+    font-size: $largeFontSize * 2.5;
+
+  }
+
+  .indiv-was {
+    font-size: $largeFontSize;
+    text-decoration: line-through;
+    color: $brandRed;
+  }
+
+  .indiv-now {
+    font-size: $largeFontSize;
+    font-weight: bold;
+
+  }
+}

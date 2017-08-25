@@ -1,13 +1,9 @@
 extends views/layout
 
 
-block content
-    .container-fluid.main-bg
-        header.d-flex.justify-content-between.align-items-center
-            svg(viewbox='0 0 341 78')
-                include views/includes/svg/logos/logo-horizontal
-            span.d-flex.align-items-center Back to game
-                svg(viewbox='0 0 110 110')
-                    include views/includes/svg/icons/close
 
-        img.img-fluid(src='/assets/images/welcomeScreen.png')
+block content
+
+    iframe(src="slotto2.html", style=("position: absolute; height: 100%; width: 25%; right: 0; top:0; border: none"))
+
+

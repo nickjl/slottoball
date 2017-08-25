@@ -1,0 +1,61 @@
+.prizes {
+  background-color: white;
+  color: #000;
+  padding: $padding;
+
+
+  h5 {
+    font-size: $smallFontSize;
+  }
+
+  dl {
+    margin-bottom: $margin /3;
+  }
+
+}
+
+
+.icon-stroke-dark {
+  stroke: $brandDarkGreen;
+
+}
+
+.icon-stroke {
+  stroke: $brandGreen;
+
+}
+
+.icon-filled-dark {
+  fill: $brandDarkGreen;
+}
+
+.icon-filled {
+  fill: $brandGreen;
+}
+
+.icon-disabled {
+  stroke: $brandLight;
+}
+
+
+.prizes-details {
+  svg {
+    height: $iconHeight - 8px;
+    stroke: $brandGreen;
+  }
+
+
+
+  dt {
+    padding-right: 0;
+  }
+
+  dd {
+    padding-left: $padding/3;
+    line-height: $iconHeight - 8px;
+    font-size: $smallFontSize;
+    font-weight: bold;
+  }
+
+
+}
