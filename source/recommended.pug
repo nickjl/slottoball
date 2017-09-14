@@ -1,0 +1,58 @@
+extends views/layout
+
+
+append css
+    link(rel='stylesheet', href='assets/css/slottoball.min.css')
+
+
+block content
+
+    .container-fluid.py-4.recommended
+        h2 Recommended Games
+        .row
+            .col-6.my-2
+                a(href="")
+                    img.img-fluid(src="https://stage.whgstage.com/scontent/images/wz_shared/desktop_games/BPTED.jpg")
+                    p Ted
+            .col-6.my-2
+                a(href="")
+                    img.img-fluid(src="https://stage.whgstage.com/scontent/images/wz_shared/desktop_games/NESTARBURST.jpg")
+                    p Starburst
+            .col-6.my-2
+                a(href="")
+                    img.img-fluid(src="https://stage.whgstage.com/scontent/images/wz_shared/desktop_games/NEGONZOSQUEST.jpg")
+                    p Gonzo's Quest
+            .col-6.my-2
+                a(href="")
+                    img.img-fluid(src="https://stage.whgstage.com/scontent/images/wz_shared/desktop_games/NEALOHACLUSTERPAYS.jpg")
+                    p Aloha Cluster Pays
+            .col-6.my-2
+                a(href="")
+                    img.img-fluid(src="https://stage.whgstage.com/scontent/images/wz_shared/desktop_games/MGIMMORTALROMANCE.jpg")
+                    p Immortal Romance
+            .col-6.my-2
+                a(href="")
+                    img.img-fluid(src="https://stage.whgstage.com/scontent/images/wz_shared/desktop_games/BPKINGKONGCASH.jpg")
+                    p King Kong Cash
+
+
+        //-#loading.mx-auto
+
+    .main-bg.container-fluid
+        header.d-flex.justify-content-between.align-items-center
+            svg.logo(viewbox='0 0 341 78')
+                include views/includes/svg/logos/logo-horizontal
+            span.d-flex.align-items-center.small Enter draw
+                svg(viewbox='0 0 110 110')
+                    include views/includes/svg/icons/close
+
+        .prizes.mt-2.prizes-frontpage
+            .d-flex.flex-column.justify-content-center.align-items-center
+                .d-flex.align-items-center.mb-1.w-100
+                    h5.mb-0.mr-2.ml-auto: nobr PRIZES STRUCTURE
+                    svg.icon-filled.mr-auto(viewbox='0 0 110 110')
+                        include views/includes/svg/icons/prizes
+                include views/includes/prizes/prizes
+                a(href='') View Full Prizes Breakdown
+
+

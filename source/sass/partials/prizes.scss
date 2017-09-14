@@ -3,6 +3,10 @@
   color: #000;
   padding: $padding;
 
+  svg {
+    width: $iconHeight;
+  }
+
 
   h5 {
     font-size: $smallFontSize;
@@ -14,6 +18,76 @@
 
 }
 
+
+
+
+.prizes-details {
+  svg {
+    height: $iconHeight - 8px;
+    width: $iconHeight - 8px;
+    stroke: $brandGreen;
+  }
+
+
+
+  dt {
+    padding-right: 0;
+  }
+
+  dd {
+    padding-left: $padding/3;
+    line-height: $iconHeight - 8px;
+    font-size: $smallFontSize;
+    font-weight: bold;
+  }
+
+
+}
+
+
+.prizes-frontpage {
+  dt, dd {
+    width: 100%;
+    max-width: none;
+    flex: 0 0 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  dd:first-of-type{
+    order: 1;
+  }
+
+  dt:first-of-type {
+    order: 2;
+  }
+
+  dd:nth-of-type(2) {
+    order: 3;
+  }
+
+  dt:nth-of-type(2) {
+    order: 4;
+  }
+
+  dd:nth-of-type(3) {
+    order: 5;
+  }
+
+  dt:nth-of-type(3) {
+    order: 6;
+  }
+
+  dd:nth-of-type(4) {
+    order: 7;
+  }
+
+  dt:nth-of-type(4) {
+    order: 8;
+  }
+
+
+}
 
 .icon-stroke-dark {
   stroke: $brandDarkGreen;
@@ -33,29 +107,6 @@
   fill: $brandGreen;
 }
 
-.icon-disabled {
+.icon-disabled, .prizes-details svg.icon-disabled {
   stroke: $brandLight;
-}
-
-
-.prizes-details {
-  svg {
-    height: $iconHeight - 8px;
-    stroke: $brandGreen;
-  }
-
-
-
-  dt {
-    padding-right: 0;
-  }
-
-  dd {
-    padding-left: $padding/3;
-    line-height: $iconHeight - 8px;
-    font-size: $smallFontSize;
-    font-weight: bold;
-  }
-
-
 }

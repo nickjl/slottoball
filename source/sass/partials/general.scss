@@ -3,7 +3,7 @@ body {
 }
 
 .main-bg {
-  background: $brandBlue url('../images/bg.jpg') no-repeat;
+  background: $brandDarkBlue url('../images/bg.jpg') no-repeat;
   background-size: cover;
   color: #fff;
   padding: $padding;
@@ -12,12 +12,23 @@ body {
 
 svg {
   height: $iconHeight;
+  //width: $iconHeight;
   fill: #fff;
   stroke-width: $iconStroke;
+}
 
+.logo {
+  width: 96px;
 }
 
 
+button:hover {
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: none;
+}
 
 .btn-green {
   width: 100%;
@@ -27,6 +38,46 @@ svg {
   padding: $padding;
   font-family: $serif;
   font-size: $largeFontSize;
+}
+
+.btn-cancel {
+  color: $brandGreen;
+  background: transparent;
+  margin: $margin;
+}
+
+/* Animation */
+@-webkit-keyframes loading {
+  to { -webkit-transform: rotate(360deg); }
+}
+@-moz-keyframes loading {
+  to { -moz-transform: rotate(360deg); }
+}
+@-ms-keyframes loading {
+  to { -ms-transform: rotate(360deg); }
+}
+@keyframes loading {
+  to { transform: rotate(360deg); }
+}
+
+/* Loader (*/
+#loading {
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: transparent;
+
+  border-top: 4px solid $brandDarkBlue;
+  border-right: 4px solid $brandDarkBlue;
+  border-bottom: 4px solid rgba(#000, 0.2);
+  border-left: 4px solid rgba(#000, 0.2);
+
+  -webkit-animation: loading 1.2s infinite linear;
+  -moz-animation: loading 1.2s infinite linear;
+  -ms-animation: loading 1.2s infinite linear;
+  animation: loading 1.2s infinite linear;
+
 }
 
 

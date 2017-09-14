@@ -1,0 +1,29 @@
+// Recommended Games
+$recBg: $brandLight;
+$recCol: $brandDarkGreen;
+
+.recommended {
+  text-align: center;
+  background: $recBg;
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  a, a:hover {
+    font-size: 0.9rem;
+    color: $recCol;
+    text-decoration: none;
+  }
+
+  p {
+    margin-bottom: 5px;
+    font-size: 0.7rem;
+  }
+
+  .col-6 {
+    padding: 0;
+  }
+}
+
+

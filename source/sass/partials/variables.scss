@@ -1,10 +1,11 @@
-$brandBlue: #3772FF;
-$brandGreen: #86CE22;
+$brandBlue: #00AEFF;
+$brandDarkBlue: #01298C;
+$brandGreen: #9BD50F;
 $brandLightGreen: #EAFFCC;
 $brandDarkGreen: #68932C;
 $brandRed: #EC2028;
-$brandLight: #DEE5E5;
-$brandLightText: darken(#DEE5E5, 20%);
+$brandLight: #F3F3F3;
+$brandLightText: darken(#F3F3F3,25%);
 
 $sans: 'Maven Pro', sans-serif;
 $serif: 'Zilla Slab', serif;
@@ -13,17 +14,19 @@ $serif: 'Zilla Slab', serif;
 $headingFont: $serif;
 $bodyFont: $sans;
 
-$smallFontSize: 0.8rem;
-$largeFontSize: 1.1rem;
-$xlFontSize: 1.4rem;
+$smallFontSize: 0.7rem;
+$largeFontSize: 0.9rem;
+$xlFontSize: 1.2rem;
 
 
 $padding: 15px;
 $margin: 15px;
 
-$iconHeight: 25px;
+$iconHeight: 22px;
 $iconStroke: 12;
 
 $borderRadius: 4px;
 
 $cartCircle: 20px;
+
+

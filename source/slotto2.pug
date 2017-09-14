@@ -29,7 +29,7 @@ append css
 block content
     .main-bg.container-fluid
         header.d-flex.justify-content-between.align-items-center
-            svg(viewbox='0 0 341 78')
+            svg.logo(viewbox='0 0 341 78')
                 include views/includes/svg/logos/logo-horizontal
             span 01 h 28 m 10 s
             span.d-flex.align-items-center.small Enter draw
@@ -38,9 +38,9 @@ block content
 
         .prizes.mt-2
             .d-flex.flex-column.justify-content-center.align-items-center
-                .d-flex.align-items-center.mb-1
-                    h5.mb-0.mr-2 PRIZES STRUCTURE
-                    svg.icon-filled(viewbox='0 0 110 110')
+                .d-flex.align-items-center.mb-1.w-100
+                    h5.mb-0.mr-2.ml-auto: nobr PRIZES STRUCTURE
+                    svg.icon-filled.mr-auto(viewbox='0 0 110 110')
                         include views/includes/svg/icons/prizes
                 include views/includes/prizes/prizes
                 a(href='') View Full Prizes Breakdown

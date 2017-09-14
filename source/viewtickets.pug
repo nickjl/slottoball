@@ -1,0 +1,55 @@
+extends views/layout
+
+
+
+append css
+    link(rel='stylesheet', href='assets/css/slottoball.min.css')
+
+
+block content
+    .main-bg.container-fluid
+        .d-flex.justify-content-between.align-items-center
+            svg(viewbox='0 0 341 78')
+                include views/includes/svg/logos/logo-horizontal
+            span.d-flex.align-items-center.small Enter draw
+                svg(viewbox='0 0 110 110')
+                    include views/includes/svg/icons/close
+
+        .confirmation.mt-2
+            .py-4.congrats
+                p.mb-0 Your tickets
+            .view-tickets
+                dl.row
+                    dt.col-2.d-flex.justify-content-center.align-items-center
+                        span 1
+                    dd.col-10.d-flex.justify-content-around.align-items-center
+                        span 25
+                        span 47
+                        span 1
+                        span 18
+                        span 19
+                        span.bonus 38
+                    dt.col-2.d-flex.justify-content-center.align-items-center
+                        span 2
+                    dd.col-10.d-flex.justify-content-around.align-items-center
+                        span 25
+                        span 3
+                        span 8
+                        span 18
+                        span 7
+                        span.bonus 7
+                    dt.col-2.d-flex.justify-content-center.align-items-center
+                        span 2
+                    dd.col-10.d-flex.justify-content-around.align-items-center
+                        span 25
+                        span 3
+                        span 8
+                        span 18
+                        span 7
+                        span.bonus 7
+
+
+
+            .return.pb-4
+                button.btn.btn-green.btn-return Return to Casino Game
+

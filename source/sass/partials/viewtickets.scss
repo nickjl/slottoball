@@ -1,0 +1,42 @@
+.view-tickets {
+  padding: 0 $padding;
+
+  dt,dd {
+    line-height: $largeFontSize;
+    font-size: $largeFontSize;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  dt:first-of-type, dd:first-of-type {
+    padding-top: $padding * 2;
+  }
+
+  dt:last-of-type, dd:last-of-type {
+    padding-bottom: $padding * 2;
+    border-bottom: 3px solid $brandLight;
+  }
+
+  dt {
+    border-right: 3px solid $brandLight;
+  }
+
+  dd {
+    color: $brandBlue;
+
+    span {
+      width: $largeFontSize;
+    }
+  }
+
+  .bonus{
+    background: $brandBlue;
+    color: #fff;
+    border-radius: 100%;
+    width: $largeFontSize * 2;
+    height: $largeFontSize * 2;
+    line-height: $largeFontSize;
+    padding: $largeFontSize/2 0;
+    text-align: center;
+  }
+}
