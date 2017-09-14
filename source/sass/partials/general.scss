@@ -1,3 +1,7 @@
+html {
+  background: $brandDarkBlue;
+}
+
 body {
   font-family: $bodyFont;
 }
@@ -8,6 +12,10 @@ body {
   color: #fff;
   padding: $padding;
   font-size: $smallFontSize;
+
+  header {
+    position: relative;
+  }
 }
 
 svg {
@@ -19,6 +27,17 @@ svg {
 
 .logo {
   width: 96px;
+}
+
+.enter-draw, .enter-draw:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.countdown-pos {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
 }
 
 

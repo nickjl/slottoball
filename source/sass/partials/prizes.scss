@@ -19,15 +19,15 @@
 }
 
 
-
-
 .prizes-details {
+  margin-left: 0;
+  margin-right: 0;
+
   svg {
     height: $iconHeight - 8px;
     width: $iconHeight - 8px;
     stroke: $brandGreen;
   }
-
 
 
   dt {
