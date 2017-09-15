@@ -7,7 +7,7 @@ body {
 }
 
 .main-bg {
-  background: $brandDarkBlue url('../images/bg.jpg') no-repeat;
+  background: $brandDarkBlue url('../img/bg.jpg') no-repeat;
   background-size: cover;
   color: #fff;
   padding: $padding;
@@ -20,13 +20,19 @@ body {
 
 svg {
   height: $iconHeight;
-  //width: $iconHeight;
+  width: $iconHeight;
   fill: #fff;
   stroke-width: $iconStroke;
 }
 
 .logo {
   width: 96px;
+}
+
+.help {
+  height: $iconHeight;
+  width: $iconHeight;
+  font-size: $xlFontSize;
 }
 
 .enter-draw, .enter-draw:hover {

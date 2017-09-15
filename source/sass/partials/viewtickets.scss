@@ -1,42 +1,120 @@
 .view-tickets {
   padding: 0 $padding;
+  background: #fff;
 
-  dt,dd {
+  ul {
+    background: url('../img/1.gif') 15% 0 repeat-y;
+
+  }
+
+  .col-2, .col-10 {
     line-height: $largeFontSize;
     font-size: $largeFontSize;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.75rem;
+    padding-top: 0.75rem;
     margin-bottom: 0;
   }
 
-  dt:first-of-type, dd:first-of-type {
+  li:first-of-type .col-2, li:first-of-type .col-10 {
     padding-top: $padding * 2;
+    border-top: 3px solid $brandLight;
   }
 
-  dt:last-of-type, dd:last-of-type {
+
+  li:last-of-type .col-2, li:last-of-type .col-10 {
     padding-bottom: $padding * 2;
     border-bottom: 3px solid $brandLight;
   }
 
-  dt {
-    border-right: 3px solid $brandLight;
-  }
 
-  dd {
+
+  .col-10 {
     color: $brandBlue;
+    position: relative;
 
     span {
       width: $largeFontSize;
     }
+
+    .bonus{
+      background: $brandBlue;
+      color: #fff;
+      border-radius: 100%;
+      width: $largeFontSize * 2;
+      height: $largeFontSize * 2;
+      line-height: $largeFontSize;
+      padding: $largeFontSize/2 0;
+      text-align: center;
+    }
   }
 
-  .bonus{
-    background: $brandBlue;
+
+}
+
+
+.current-tickets {
+  li:first-of-type .col-2, li:first-of-type .col-10 {
+    padding-top: 0;
+    border-top: none;
+  }
+
+}
+
+.ticket-won {
+  background: $brandMedBlue url('../img/2.gif') 18% 0 repeat-y;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  span {
     color: #fff;
-    border-radius: 100%;
-    width: $largeFontSize * 2;
-    height: $largeFontSize * 2;
-    line-height: $largeFontSize;
-    padding: $largeFontSize/2 0;
-    text-align: center;
+  }
+
+
+
+  .col-2, .col-10 {
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+  }
+
+
+}
+
+
+
+.won-prize {
+  font-weight: 900;
+  position: absolute;
+  top: - ($largeFontSize/2 + 0.7rem);
+  left: 50%;
+  transform: translateX(-80%);
+  background: $brandDarkBlue;
+  width: auto !important;
+  border-radius: $borderRadius * 4;
+  padding: 10px;
+}
+
+
+.all-tickets {
+  background: $brandLight;
+
+  .nav-item {
+    width: 50%;
+    background: $brandLight;
+  }
+
+  .nav-tabs .nav-link {
+    color: #000;
+    font-weight: 900;
+  }
+
+  .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border: none;
+  }
+
+  .nav-tabs .nav-link.active {
+    border: 0;
+    border-bottom: 3px solid $brandBlue;
+    color: $brandBlue;
+    background: $brandLight;
   }
 }

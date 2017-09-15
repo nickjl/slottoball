@@ -14,39 +14,143 @@ block content
             span.d-flex.align-items-center.small Enter draw
                 svg(viewbox='0 0 110 110')
                     include views/includes/svg/icons/close
+                i.help ?
 
         .confirmation.mt-2
-            .py-4.congrats
+            .pt-4.px-0.all-tickets
                 p.mb-0 Your tickets
-            .view-tickets
-                dl.row
-                    dt.col-2.d-flex.justify-content-center.align-items-center
-                        span 1
-                    dd.col-10.d-flex.justify-content-around.align-items-center
-                        span 25
-                        span 47
-                        span 1
-                        span 18
-                        span 19
-                        span.bonus 38
-                    dt.col-2.d-flex.justify-content-center.align-items-center
-                        span 2
-                    dd.col-10.d-flex.justify-content-around.align-items-center
-                        span 25
-                        span 3
-                        span 8
-                        span 18
-                        span 7
-                        span.bonus 7
-                    dt.col-2.d-flex.justify-content-center.align-items-center
-                        span 2
-                    dd.col-10.d-flex.justify-content-around.align-items-center
-                        span 25
-                        span 3
-                        span 8
-                        span 18
-                        span 7
-                        span.bonus 7
+                ul#ticketTab.nav.nav-tabs(role='tablist').mt-4
+                    li.nav-item
+                        a.nav-link.active(data-toggle='tab', href='#current', role='tab', aria-controls='current') Next Draw Tickets
+                    li.nav-item
+                        a.nav-link(data-toggle='tab', href='#previous', role='tab', aria-controls='previous') Previous Tickets
+
+                .tab-content.view-tickets.pt-4
+                    #current.tab-pane.active(role='tabpanel')
+                        div
+
+                            .d-flex.justify-content-between.py-2
+                                span Draw date 23.05.2017
+                                span 12:00am
+                            ul.list-unstyled
+                                li.row
+                                    .col-2.d-flex.justify-content-center.align-items-center
+                                        span 1
+                                    .col-10.d-flex.justify-content-around.align-items-center
+                                        span 25
+                                        span 47
+                                        span 1
+                                        span 18
+                                        span 19
+                                        span.bonus 38
+                                li.row.ticket-won
+                                    .col-2.d-flex.justify-content-center.align-items-center
+                                        span 2
+                                    .col-10.d-flex.justify-content-around.align-items-center
+                                        span 25
+                                        span 3
+                                        span 8
+                                        span 18
+                                        span 7
+                                        span.bonus 7
+                                        span.won-prize Won: £2000
+
+
+
+                        div
+
+                            .d-flex.justify-content-between.py-2
+                                span Draw date 23.05.2017
+                                span 12:00am
+                            ul.list-unstyled
+                                li.row
+                                    .col-2.d-flex.justify-content-center.align-items-center
+                                        span 1
+                                    .col-10.d-flex.justify-content-around.align-items-center
+                                        span 25
+                                        span 47
+                                        span 1
+                                        span 18
+                                        span 19
+                                        span.bonus 38
+                                li.row.ticket-won
+                                    .col-2.d-flex.justify-content-center.align-items-center
+                                        span 2
+                                    .col-10.d-flex.justify-content-around.align-items-center
+                                        span 25
+                                        span 3
+                                        span 8
+                                        span 18
+                                        span 7
+                                        span.bonus 7
+                                        span.won-prize Won: £2000
+                                li.row
+                                    .col-2.d-flex.justify-content-center.align-items-center
+                                        span 2
+                                    .col-10.d-flex.justify-content-around.align-items-center
+                                        span 25
+                                        span 3
+                                        span 8
+                                        span 18
+                                        span 7
+                                        span.bonus 7
+
+                        div
+
+                            .d-flex.justify-content-between.py-2
+                                span Draw date 23.05.2017
+                                span 12:00am
+                            ul.list-unstyled
+                                li.row.ticket-won
+                                    .col-2.d-flex.justify-content-center.align-items-center
+                                        span 2
+                                    .col-10.d-flex.justify-content-around.align-items-center
+                                        span 25
+                                        span 3
+                                        span 8
+                                        span 18
+                                        span 7
+                                        span.bonus 7
+                                        span.won-prize Won: £2000
+                                li.row
+                                    .col-2.d-flex.justify-content-center.align-items-center
+                                        span 2
+                                    .col-10.d-flex.justify-content-around.align-items-center
+                                        span 25
+                                        span 3
+                                        span 8
+                                        span 18
+                                        span 7
+                                        span.bonus 7
+                    #previous.tab-pane(role='tabpanel')
+                        dl.row.current-tickets
+                            dt.col-2.d-flex.justify-content-center.align-items-center
+                                span 1
+                            dd.col-10.d-flex.justify-content-around.align-items-center
+                                span 22
+                                span 47
+                                span 1
+                                span 18
+                                span 19
+                                span.bonus 38
+                            dt.col-2.d-flex.justify-content-center.align-items-center
+                                span 2
+                            dd.col-10.d-flex.justify-content-around.align-items-center
+                                span 22
+                                span 3
+                                span 8
+                                span 18
+                                span 7
+                                span.bonus 7
+                            dt.col-2.d-flex.justify-content-center.align-items-center
+                                span 2
+                            dd.col-10.d-flex.justify-content-around.align-items-center
+                                span 22
+                                span 3
+                                span 8
+                                span 18
+                                span 7
+                                span.bonus 7
 
 
 

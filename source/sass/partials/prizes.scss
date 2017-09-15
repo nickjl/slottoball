@@ -46,44 +46,40 @@
 
 
 .prizes-frontpage {
-  dt, dd {
-    width: 100%;
-    max-width: none;
-    flex: 0 0 100%;
-    padding: 0;
+
+  padding: 0;
+
+  dt {
+    text-align: left;
+    font-weight: 900;
+  }
+
+  dd {
+    text-align: right;
+    font-weight: 900;
+  }
+
+  .col-6 {
+    padding: 0 $padding/3;
+  }
+
+
+  dd:first-of-type, dt:first-of-type {
+    font-weight: normal;
+    color: lighten(black, 60%);
+  }
+
+
+
+
+
+  h2 {
+    font-size: 1rem;
+    font-family: $serif;
+    background: $brandLight;
+    padding: $padding $padding/3;
     text-align: center;
-  }
-
-  dd:first-of-type{
-    order: 1;
-  }
-
-  dt:first-of-type {
-    order: 2;
-  }
-
-  dd:nth-of-type(2) {
-    order: 3;
-  }
-
-  dt:nth-of-type(2) {
-    order: 4;
-  }
-
-  dd:nth-of-type(3) {
-    order: 5;
-  }
-
-  dt:nth-of-type(3) {
-    order: 6;
-  }
-
-  dd:nth-of-type(4) {
-    order: 7;
-  }
-
-  dt:nth-of-type(4) {
-    order: 8;
+    margin-bottom: 0;
   }
 
 

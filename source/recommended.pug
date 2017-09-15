@@ -48,12 +48,23 @@ block content
                         include views/includes/svg/icons/close
 
         .prizes.mt-2.prizes-frontpage
-            .d-flex.flex-column.justify-content-center.align-items-center
-                .d-flex.align-items-center.mb-1.w-100
-                    h5.mb-0.mr-2.ml-auto: nobr PRIZES STRUCTURE
+            h2 Match balls and win
+            .d-flex.flex-column.justify-content-center.align-items-center.p-2
+                .d-flex.align-items-center.mb-3.w-100
+                    h5.mb-0.mr-2.ml-auto: nobr PRIZE STRUCTURE
                     svg.icon-filled.mr-auto(viewbox='0 0 110 110')
                         include views/includes/svg/icons/prizes
-                include views/includes/prizes/prizes
-                a(href='') View Full Prizes Breakdown
+                dl.row.w-100
+                    dt.col-6 Match
+                    dd.col-6 WIN
+                    dt.col-6 6 + bonus
+                    dd.col-6 £2,000,000
+                    dt.col-6 6
+                    dd.col-6 £1,000,000
+                    dt.col-6 5
+                    dd.col-6 Porche Cayman
+
+                a(href='') View Full Prize Breakdown
+            button.btn.btn-green Enter Draw
 
 
